@@ -1,0 +1,31 @@
+[package]
+name = "little-bird-listening"
+version = "0.0.1"
+description = "A tauri app with NsPanel support + audio recording"
+authors = ["Shivam Singh <shivambit01@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [ "macos-private-api", "tray-icon", "devtools"] }
+tauri-plugin-global-shortcut = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v2" }
+
+thiserror = "1.0.63"
+
+tauri-nspanel = { git = "https://github.com/ahkohd/tauri-nspanel", branch = "v2" }
+monitor = { git = "https://github.com/ahkohd/tauri-toolkit", branch = "v2" }
+cpal = "0.15.3"
+serde = "1.0.213"
+
+
+[features]
+# by default Tauri runs in production mode
+# when `tauri dev` runs it is executed with `cargo run --no-default-features` if `devPath` is an URL
+default = ["custom-protocol"]
+# this feature is used used for production builds where `devPath` points to the filesystem
+# DO NOT remove this
+custom-protocol = ["tauri/custom-protocol"]
