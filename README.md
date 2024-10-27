@@ -31,3 +31,7 @@ pnpm run tauri build
 ```
 
 For more detailed instructions, refer to the [Tauri documentation](https://v2.tauri.app).
+<img width="2560" alt="Screenshot 2024-10-28 at 4 08 54 AM" src="https://github.com/user-attachments/assets/6d928774-7607-4506-8313-6b37ab542f7c">
+<img width="2560" alt="Screenshot 2024-10-28 at 4 09 01 AM" src="https://github.com/user-attachments/assets/b44b79f9-7f50-4bc8-a5c9-c269a944e065">
+<img width="2560" alt="Screenshot 2024-10-28 at 4 09 30 AM" src="https://github.com/user-attachments/assets/724fb025-d26c-4b67-93c1-2462802b4ba1">
+<img width="375" alt="Screenshot 2024-10-28 at 4 09 54 AM" src="https://github.com/user-attachments/assets/e92fcd2f-a306-41db-827a-eb6bb378b1e0">
